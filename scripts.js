@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       
-      // Simula envio de lead
+      // Exibe a mensagem de sucesso após o envio do formulário
       Swal.fire({
         title: 'Obrigado!',
         text: 'Recebemos sua solicitação. Em breve, nossa equipe entrará em contato.',
@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         confirmButtonText: 'OK'
       });
       
+      // Aqui é feito o reset do formulário (opcional)
       form.reset();
     });
   });
